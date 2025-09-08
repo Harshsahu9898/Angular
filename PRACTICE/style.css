@@ -1,0 +1,41 @@
+.box{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+    background-color: aquamarine;
+    text-shadow: mediumblue;
+}
+.content{
+    color: red;
+}
+.newClass{
+    background-color: green;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid black;
+}
+
+.dark{
+    background-color: black;
+    color: white;
+}
+.light{
+    background-color: white;
+    color: black;
+}
+
+#mode{
+    margin: 100px;
+    padding: 100px;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    background-color: purple;
+    color: aqua;
+}
