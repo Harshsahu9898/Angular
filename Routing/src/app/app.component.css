@@ -1,0 +1,16 @@
+ul{
+    display: flex;
+    background-color: magenta;
+    white-space: inherit;
+    width: 200px;
+    height: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+a{
+    color: white;
+}
+li{
+    color:aqua;
+}

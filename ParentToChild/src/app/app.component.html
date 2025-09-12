@@ -1,0 +1,18 @@
+<h1>Parent Component To Child Component Communication</h1>
+<h2>Parent Component</h2>
+
+<!-- <app-user user="Harsh Sahu"></app-user> -->
+<!-- <app-user [user]="userName"></app-user> -->
+<!-- to pass the dynamic value we have to write user in [] brackets so that angular will understand that userName is property not a variable -->
+
+<!-- if i have to work with select functionality of forms and add dynamic value and send it to child component, i can write -->
+
+<app-user [user]="selectedUser.value" city="Gurgaon"></app-user>
+
+<select #selectedUser (change)="onUserChange(selectedUser.value)" >
+  <option value="">Select Names:</option>
+  <option value="Harsh">Harsh</option>
+  <option value="Kabir">Kabir</option>
+  <option value="Sujal">Sujal</option>
+  <option value="Tony">Tony</option>
+</select>

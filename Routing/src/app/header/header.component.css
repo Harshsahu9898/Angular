@@ -1,0 +1,30 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul{
+    display: flex;
+    list-style-type:none ;
+    width: 200px;
+    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+.active{
+    background-color: red;
+
+}
+.active1{
+    background-color: yellow;
+}

@@ -1,0 +1,13 @@
+.h2{
+    border: 1px solid red;
+    width: 50%;
+    display:flex;
+    justify-content: space-between;
+    color: gold;
+}
+.span{
+    background-color: red;
+    display: inline-block;
+    padding: 5px;
+    color: wheat;
+}

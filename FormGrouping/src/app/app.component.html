@@ -1,0 +1,25 @@
+<h1>Form Grouping</h1>
+
+<form [formGroup]="profileForm" (ngSubmit)="submitData()" >
+  <input type="text" placeholder="enter name" formControlName="name">
+  <span *ngIf="name?.hasError('required')">Name is Required.</span>
+  <span class="error" *ngIf="name?.invalid &&(name?.dirty || name?.touched)">Please Enter username</span>
+  <!-- ek baar value dali wo galat h  -->
+  <br><br>
+  <input type="text" placeholder="enter password" formControlName="password">
+  <span *ngIf="password?.hasError('required')">Password is Required.</span>
+  <span class="error" *ngIf="password?.invalid &&(password?.dirty || password?.touched)">Please Enter valid password</span>
+  <br><br>
+  <input type="text" placeholder="enter email" formControlName="email">
+  <span *ngIf="email?.hasError('required')">Email is Required.</span>
+  <span class="error" *ngIf="email?.invalid &&(email?.dirty || email?.touched)">Please Enter valid email</span>
+  <br><br>
+  <button (click)="submitData()">Submit</button>
+
+  <!-- <br><br> -->
+  <!-- <button type="button" (click)="setValue()">Set Value</button> -->
+</form>
+
+<!-- <!-- <h1>{{this.profileForm.value.name}}</h1> -->
+<h1>{{this.profileForm.value.password}}</h1>
+<h1>{{this.profileForm.value.email}}</h1> -->
