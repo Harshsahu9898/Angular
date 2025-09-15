@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Pipes": {
+    "ComponentLifeCycle": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/pipes",
+            "outputPath": "dist/component-life-cycle",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -59,10 +59,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Pipes:build:production"
+              "buildTarget": "ComponentLifeCycle:build:production"
             },
             "development": {
-              "buildTarget": "Pipes:build:development"
+              "buildTarget": "ComponentLifeCycle:build:development"
             }
           },
           "defaultConfiguration": "development"
