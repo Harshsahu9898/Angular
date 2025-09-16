@@ -1,0 +1,27 @@
+<h1>API Call JSON Server</h1>
+
+
+@for(user of users;track user.id){
+    <ul>
+        <li>{{user.name}}</li>
+        <li>{{user.city}}</li>
+        <li>{{user.age}}</li>
+        <li><button (click)="deleteUser(user.id)">Delete</button></li>
+        <li><button (click)="selectUser(user.id)">Update User</button></li>
+    </ul>
+}
+
+<form #userForm="ngForm" (ngSubmit)="addUser(userForm.value)">
+    <input type="text" placeholder="Enter Name" name="name" [ngModel]="selectedUser?.name">
+    <br><br>
+    <input type="text" placeholder="Enter City" name="city" [ngModel]="selectedUser?.city">
+    <br><br>
+    <input type="number" minlength="1" maxlength="100" placeholder="Enter Age" name="age" [ngModel]="selectedUser?.age">
+    <br><br>
+    @if(!selectedUser){
+        <button type="submit">Add User</button>
+    }
+    @else{
+        <button type="submit">Update User</button>
+    }
+</form>

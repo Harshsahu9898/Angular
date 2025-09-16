@@ -1,0 +1,10 @@
+h1{
+    position:relative;
+    text-align:center;
+    top:20px;  
+    color: white;
+    background-color: black;
+    padding: 10px;
+    margin: 120px;
+    font-family: Georgia, 'Times New Roman', Times, serif;             
+}

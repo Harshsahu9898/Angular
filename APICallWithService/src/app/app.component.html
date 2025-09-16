@@ -1,0 +1,11 @@
+<h1>HMART</h1>
+<img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Superman_shield.svg" alt="">
+@for(product of productList;track product.id){
+  <ul>
+    <li><b>Name: </b>{{product.title}}</li>
+    <li><b>Price: </b>{{product.price}}</li>
+    <li><b>Rating: </b>{{product.rating}}</li>
+    <li><b>category: </b>{{product.category}}</li>
+    <li><b>Thumbnail: </b><img src="{{product.thumbnail}}" alt=""></li>
+  </ul>
+}

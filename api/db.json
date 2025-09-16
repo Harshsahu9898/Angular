@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Kabir",
+      "city": "CityOrangation",
+      "age": 23,
+      "id": "3ecb"
+    },
+    {
+      "name": "Harsh",
+      "city": "Jamshedpur",
+      "age": 20,
+      "id": "70c9"
+    },
+    {
+      "name": "SimraN",
+      "city": "Jamshedpur",
+      "age": 25,
+      "id": "6364"
+    },
+    {
+      "id": "f02a",
+      "name": "Amrit",
+      "city": "Jalandhar",
+      "age": 23
+    }
+  ]
+}
